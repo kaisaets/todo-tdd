@@ -5,6 +5,7 @@ async function connect() {
     await mongoose.connect("mongodb://user:password@localhost:27017/tests", 
     { useNewUrlParser: true }
     );
+    console.log('connected')
   } catch (err) {
     console.error("Error connecting to mongodb");
     console.error(err);
